@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect } from 'react'
 import styled, { keyframes, ThemeProvider } from 'styled-components'
 
 // ── Inline DarkTheme so file is self-contained ──────────────────────────────
@@ -435,7 +435,7 @@ const AboutPage = () => {
             </Body>
             <GlobeWrap>
               <GlobeRing dur="10s" />
-              <GlobeRing dur="16s" rev style={{ inset: '12%' }} />
+              <GlobeRing dur="16s" rev={true} style={{ inset: '12%' }} />
               <GlobeRing dur="6s"  style={{ inset: '24%', borderStyle: 'dashed' }} />
               <GlobeCore />
               <OrbitDot dur="6s" />
